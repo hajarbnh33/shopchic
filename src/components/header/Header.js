@@ -10,8 +10,7 @@ function Header(){
             <div className="container_nav">
                 <FontAwesomeIcon icon={faSearch}/>
                 <FontAwesomeIcon icon={faShoppingCart}/>
-            </div>
-            
+            </div>            
         </header>
     )
 }

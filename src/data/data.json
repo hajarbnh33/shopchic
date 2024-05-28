@@ -3,48 +3,48 @@
       "id": 1,
       "name": "Robe noire",
       "price": 19.99,
-      "image":"/black_dress.jpg"
+      "image":"/assets/black_dress.jpg"
     },
     {
       "id": 2,
       "name": "Robe bleu",
       "price": 19.99,
-      "image":"/blue_dress.jpg"
+      "image":"/assets/blue_dress.jpg"
     },
     {
       "id": 3,
       "name": "Jupe verte",
       "price": 24.99,
-      "image":"/green_dress.jpg"
+      "image":"/assets/green_jupe.jpg"
     },
     {
         "id": 4,
         "name": "Jupe longue",
         "price": 24.99,
-        "image":"/jupe.jpg"
+        "image":"/assets/jupe.jpg"
       },
       {
         "id": 5,
         "name": "Robe longue",
         "price": 39.99,
-        "image":"/long_dress.jpg"
+        "image":"/assets/long_dress.jpg"
       },
       {
         "id": 6,
         "name": "Robe rose",
         "price": 24.99,
-        "image":"/pink_dress.jpg"
+        "image":"/assets/pink_dress.jpg"
       },
       {
         "id": 7,
         "name": "Robe rouge",
         "price": 39.99,
-        "image":"/red_dress.jpg"
+        "image":"/assets/red_dress.jpg"
       },
       {
         "id": 8,
         "name": "Robe blanche",
         "price": 24.99,
-        "image":"/white_dress.jpg"
+        "image":"/assets/white_dress.jpg"
       }
   ]
