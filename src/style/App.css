@@ -1,6 +1,7 @@
 body{
     padding-left: 50px;
     padding-right: 50px;
+    background: linear-gradient(to bottom, #EEE6D8,#f5efe6 );
 }
 
 *{

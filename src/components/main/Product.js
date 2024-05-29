@@ -1,25 +1,37 @@
 import React, { useState, useEffect } from 'react';
 import productsData from '../../data/data.json'; // Importer directement data.json
+import Filter from "./Filter";
+import CartIcon from './CartIcon';
+
 
 function Product() {
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState([]); //les articles importés depuis data.json
 
   useEffect(() => {
-    // Utilisation directe de l'importation des données
     setProducts(productsData);
   }, []);
 
+  const handleSort = (order)=>{ //croissant ou décroissant 
+    const sortedArticles = [...products].sort((a,b)=>{ // copie l'array des produits // sort permet de trier
+      return order === 'asc' ? a.price - b.price : b.price - a.price // order === 'asc' :utilisateur a choisi un tri ascendant // 
+    });
+    setProducts(sortedArticles)
+  }
+
   return (
-    <div className="container_product">
-      <h2>Product List</h2>
-      <ul>
+    <div>
+      <Filter onSort={handleSort} />
+      <section className="container_product">
         {products.map(product => (
-          <li key={product.id}>
-            <img src={product.image} alt={product.name} />
-            <div>{product.name} - ${product.price}</div>
-          </li>
+          <div key={product.id}>
+            <img src={product.image} alt={product.name} id='articles' />
+            <div className='container_info'>{
+            product.name} - ${product.price}
+            <CartIcon/>
+            </div>
+          </div>
         ))}
-      </ul>
+      </section>
     </div>
   );
 }

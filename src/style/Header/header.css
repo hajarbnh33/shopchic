@@ -2,11 +2,12 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-#logo{
-    width: 200px;
+#logo {
+    height: 200px;
+    margin-left: -30px;
 }
 
 .container_nav{
@@ -18,4 +19,5 @@ header{
 h1{
     font-family: "Pacifico";
     font-size: 60px;
+    margin-left: -20px;
 }
