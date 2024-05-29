@@ -11,7 +11,7 @@
 
 h2{
     position:absolute ;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%,-50%);
     z-index: 1;
@@ -35,6 +35,35 @@ h2{
     gap: 5px;
     align-items: center;
 }
+
+.container_cart {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    position: relative;
+  }
+  
+  .bulle {
+    position: absolute;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #D5CABC;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: black;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1;
+  }
+  
+  .container_cart:hover .bulle {
+    opacity: 1;
+    visibility: visible;
+  }
+  
 
 .sort-menu{
     padding-top: 50px;

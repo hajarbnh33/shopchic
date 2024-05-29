@@ -7,14 +7,14 @@ function CartIcon(){
 
     const handleBulle = () => {
         setShowBulle(true);
-        setTimeout(()=> setShowBulle(false),2000);
+        setTimeout(()=> setShowBulle(false), 2000);
     }
 
     return(
         <div className='container_cart'>
             {showBulle && (
                 <div className='bulle'>
-                    Ajouté au panier
+                    Ajouter
                 </div>
             )}
             <FontAwesomeIcon
